@@ -6,7 +6,7 @@
 * Run following commands in terminal in your home directory.
 ```bash
 sudo apt install git
-git clone https://github.com/sai-koushik-macha/dotfiles ~/.dotfiles
+git clone git@github.com:sai-koushik-macha/dotfiles.git ~/dotfiles
 ```
 * Install [vim-plug](https://github.com/junegunn/vim-plug)
 
