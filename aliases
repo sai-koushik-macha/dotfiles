@@ -19,10 +19,6 @@ alias la="ls -alh"
 # To go to home directory directly
 alias ~="cd ~"
 
-# use neovim instead of vim
-alias vim="nvim"
-alias vi="nvim"
-
 # wherever I use clear let the new prompt be started so that I don't get any new
 # extra line in prompt
 alias clear="unset NEW_LINE_BEFORE_PROMPT && clear"

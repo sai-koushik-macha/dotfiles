@@ -9,7 +9,7 @@
 sudo apt install git
 git clone git@github.com:sai-koushik-macha/dotfiles.git ~/dotfiles
 ```
-* Install [vim-plug](https://github.com/junegunn/vim-plug)
+* Install [Vundle](https://github.com/VundleVim/Vundle.vim)
 * After cloning run these commands
 ``` bash
 rcup
