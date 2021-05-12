@@ -1,0 +1,2 @@
+RPROMPT=''
+RPROMPT+='%*'
