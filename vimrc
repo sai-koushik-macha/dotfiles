@@ -1,8 +1,16 @@
+set nocompatible
+filetype plugin on
 set termguicolors
 set exrc
 syntax enable
+
+" file search
+set path+=**
+" Menu
+set wildmenu
+set wildmode=full
 " Settings ctags
-set tags=tags;
+set tags=tags
 " tab stops
 set autoindent
 set tabstop=4
@@ -19,9 +27,6 @@ set relativenumber
 set complete+=kspell
 set completeopt=menuone,longest
 set shortmess+=c
-"Menu
-set wildmenu
-set wildmode=full
 " Mouse
 set clipboard=unnamedplus
 set mouse=a
@@ -49,13 +54,11 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
     Plugin 'VundleVim/Vundle.vim'
-call vundle#end()            " required
-filetype plugin indent on    " required
+    Plugin 'SirVer/ultisnips' | Plugin 'honza/vim-snippets'
+    Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+call vundle#end()
+filetype plugin indent on
 
 " remaps
 let maplocalleader=" "
