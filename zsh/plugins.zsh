@@ -1,8 +1,9 @@
-# Source to use autojump
 
-source /usr/share/autojump/autojump.sh
+source .zsh/antigen/antigen.zsh
 
-# Source to zsh-autosuggestions 
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# Source to  zsh-syntax-highlighting
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+
+
+antigen apply
