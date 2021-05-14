@@ -1,5 +1,5 @@
 
-source .zsh/antigen/antigen.zsh
+source ~/.zsh/antigen/antigen.zsh
 
 
 antigen bundle zsh-users/zsh-syntax-highlighting
