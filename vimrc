@@ -7,10 +7,17 @@ call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
     Plugin 'SirVer/ultisnips' | Plugin 'honza/vim-snippets'
     Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+    Plugin 'tpope/vim-fugitive'
+    Plugin 'vim-airline/vim-airline'
+    Plugin 'morhetz/gruvbox'
 call vundle#end()
 filetype plugin indent on
 
 
-
 " remaps
-let maplocalleader=" "
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+let mapleader=" "
