@@ -10,7 +10,10 @@ call vundle#begin()
     Plugin 'tpope/vim-fugitive'
     Plugin 'vim-airline/vim-airline'
     Plugin 'morhetz/gruvbox'
+    Plugin 'preservim/nerdcommenter'
+    Plugin 'dense-analysis/ale'
 call vundle#end()
+filetype plugin on
 filetype plugin indent on
 
 
