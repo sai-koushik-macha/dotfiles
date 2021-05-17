@@ -8,10 +8,6 @@ let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
 
-" Use ALE and also some plugin 'foobar' as completion sources for all code.
-call deoplete#custom#option('sources', {
-\ '_': ['ale', 'foobar'],
-\})
 " Enable completion where available.
 " This setting must be set before ALE is loaded.
 "
