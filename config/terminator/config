@@ -1,4 +1,5 @@
 [global_config]
+  window_state = maximise
   borderless = True
   title_use_system_font = False
   title_font = MesloLGS NF 12
