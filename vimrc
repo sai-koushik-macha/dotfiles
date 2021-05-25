@@ -1,20 +1,12 @@
 " Plugins
-set nocompatible              " be iMproved, required
-filetype off                  " required
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-    Plugin 'VundleVim/Vundle.vim'
-    Plugin 'SirVer/ultisnips' | Plugin 'honza/vim-snippets'
-    Plugin 'neoclide/coc.nvim', {'branch': 'release'}
-    Plugin 'tpope/vim-fugitive'
-    Plugin 'vim-airline/vim-airline'
-    Plugin 'morhetz/gruvbox'
-    Plugin 'dense-analysis/ale'
-call vundle#end()
-filetype plugin on
-filetype plugin indent on
-
+call plug#begin('~/.vim/plugged')
+    Plug 'SirVer/ultisnips' | Plugin 'honza/vim-snippets'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"     Plug 'tpope/vim-fugitive'
+    Plug 'vim-airline/vim-airline'
+"     Plug 'morhetz/gruvbox'
+    Plug 'dense-analysis/ale'
+call plug#end()
 
 " remaps
 noremap <Up> <Nop>

@@ -9,9 +9,9 @@
 sudo apt install git
 git clone git@github.com:sai-koushik-macha/dotfiles.git ~/dotfiles
 ```
-* Install [Vundle](https://github.com/VundleVim/Vundle.vim) for vim plugin manager
+* Install [vim-plug](https://github.com/junegunn/vim-plug) for vim plugin manager
 * Install [antigen](https://github.com/zsh-users/antigen/wiki/Installation) for zsh plugin manager
 * After cloning run these commands
 ``` bash
-rcup
+env RCRC=$HOME/dotfiles/rcrc; rcup;
 ```
