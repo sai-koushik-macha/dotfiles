@@ -26,8 +26,8 @@ alias clear="unset NEW_LINE_BEFORE_PROMPT && clear"
 alias v="vim"
 alias vi="vim"
 
-# Use history with fzf
-alias hist="cat ~/.zsh_history | sort | uniq | fzf"
-
 # Use mkdir -p instead of mkdir
 alias mkdir="mkdir -p"
+
+# Git Aliases
+alias g="git"
