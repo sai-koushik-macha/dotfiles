@@ -12,19 +12,4 @@ function precmd() {
 }
 
 setopt PROMPT_SUBST
-PROMPT=''
-
-# Directory Path
-PROMPT+='%F{033}%~%f'
-
-# To see git branch
-PROMPT+='${vcs_info_msg_0_}'
-
-# New line
-PROMPT+=$'\n'
-
-# Just to diffentiate between command and PROMPT
-PROMPT+=%(?.%F{010}$'\U276F'%f.%F{009}$'\U276F'%f)
-
-# Spacing
-PROMPT+=' '
+PROMPT='%F{012}%~%f${vcs_info_msg_0_} %% '
