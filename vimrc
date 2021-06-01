@@ -10,9 +10,4 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 " remaps
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-
 let mapleader=" "

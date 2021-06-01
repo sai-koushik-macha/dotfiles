@@ -5,4 +5,3 @@ do
 done
 
 source $HOME/.aliases
-
