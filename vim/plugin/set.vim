@@ -36,8 +36,3 @@ set undofile
 " search
 set nohlsearch
 set incsearch
-" Give more space for displaying messages
-set cmdheight=2
-" staus line
-set laststatus=2
-set statusline=
