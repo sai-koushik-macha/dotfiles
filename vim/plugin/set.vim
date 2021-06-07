@@ -27,7 +27,6 @@ set clipboard=unnamedplus
 set mouse=a
 " Colorcolumn and signcoloumn
 set colorcolumn=80
-set signcolumn=yes
 " no swap and backup
 set noswapfile
 set nobackup
