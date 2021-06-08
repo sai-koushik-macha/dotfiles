@@ -1,12 +1,20 @@
 [user]
 	email = saikoushikmacha@gmail.com
-	name = sai-koushik-macha
+	 name = sai-koushik-macha
 [color]
     branch = auto
-    diff = auto
+	  diff = auto
     status = auto
+[color "status"]
+	    added = green
+	  changed = magenta
+	untracked = red 
 [alias]
-    a = add
+     a = add
     ci = commit -a
-    st = status
     co = checkout
+	 d = diff
+	pl = pull
+	ps = push
+	 r = restore
+    st = status

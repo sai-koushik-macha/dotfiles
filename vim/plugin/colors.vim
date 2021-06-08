@@ -1,5 +1,5 @@
 " General colors
-hi Cursor 		guifg=NONE    guibg=#878787 gui=none
+hi Cursor 		guifg=NONE	  guibg=#ffffff gui=none
 hi Normal 		guifg=#333333 guibg=#f7f7f7 gui=none
 hi NonText 		guifg=#857b6f guibg=#f7f7f7 gui=none
 hi LineNr 		guifg=#857b6f guibg=#dbdbdb gui=none
@@ -7,7 +7,7 @@ hi StatusLine 	guifg=#878787 guibg=#ffffff gui=none
 hi StatusLineNC guifg=#878787 guibg=#ffffff gui=none
 hi VertSplit 	guifg=#444444 guibg=#444444 gui=none
 hi Folded 		guibg=#384048 guifg=#a0a8b0 gui=none
-hi Title		guifg=#f6f3e8 guibg=NONE	gui=none
+hi Title		guifg=#000000 guibg=NONE	gui=none
 hi Visual		guifg=#000000 guibg=#e88100 gui=none
 hi SpecialKey	guifg=#808080 guibg=#343434 gui=none
 hi TabLineSel   guifg=#000000 guibg=#8bb5ff gui=none 
