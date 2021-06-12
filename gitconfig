@@ -18,3 +18,5 @@
 	ps = push
 	 r = restore
     st = status
+[core]
+	excludesfile = ~/.gitignore

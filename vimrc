@@ -1,14 +1,24 @@
+" Vimrc
+"
+" This file contains the minimal settings to set the foundation, with the
+" majority of the configuration and settings living in files spread between
+" vim/rcfiles and vim/rcplugins
+
+let mapleader="\<Space>"
+function! s:SourceConfigFilesIn(directory)
+  let directory_splat = '~/.vim/' . a:directory . '/*'
+  for config_file in split(glob(directory_splat), '\n')
+    if filereadable(config_file)
+      execute 'source' config_file
+    endif
+  endfor
+endfunction
 " Plugins
-call plug#begin('~/.vim/plugged')
-    Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'dense-analysis/ale'
-    Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-	Plug 'junegunn/fzf.vim'
+call plug#begin('~/.vim/bundle')
+call s:SourceConfigFilesIn('rcplugins')
 call plug#end()
 
+call s:SourceConfigFilesIn('rcfiles')
+
 " remaps
-let mapleader="\<Space>"
-noremap <C-p> :Files<cr>
-let g:fzf_layout = { 'left': '100%' }
+nnoremap <leader>sop :source %<cr>

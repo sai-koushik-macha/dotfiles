@@ -14,7 +14,7 @@ set tags=tags
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-" noerrorbells
+" no error bells
 set noerrorbells visualbell t_vb=
 " Numbering
 set nu relativenumber 
@@ -25,7 +25,7 @@ set shortmess+=c
 " Mouse
 set clipboard=unnamedplus
 set mouse=a
-" Colorcolumn and signcoloumn
+" Color column and sign column
 set colorcolumn=80
 " no swap and backup
 set noswapfile

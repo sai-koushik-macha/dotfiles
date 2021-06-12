@@ -1,0 +1,5 @@
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+noremap <C-p> :GFiles<cr>
+noremap <leader>b :Buffers<cr>
+let g:fzf_layout = { 'left': '100%' }
