@@ -45,3 +45,5 @@ hi Type			guifg=#0303c3 gui=none
 hi StorageClass	guifg=#b34bb7 gui=none
 hi Structure	guifg=#0383aa gui=none
 hi Typedef		guifg=#03b39b gui=none
+
+" vim:ft=vim

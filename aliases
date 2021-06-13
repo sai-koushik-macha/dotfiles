@@ -22,6 +22,9 @@ alias ~="cd ~"
 # extra line in prompt
 alias clear="unset NEW_LINE_BEFORE_PROMPT && clear"
 
+# git
+alias g="git"
+
 # vim
 alias v="vim"
 alias vi="vim"
@@ -29,8 +32,10 @@ alias vi="vim"
 # Use mkdir -p instead of mkdir
 alias mkdir="mkdir -p"
 
-# Git Aliases
-alias g="git"
-
 # Dotfiles aliase
 alias dot="rcup; source $HOME/.zprofile" 
+
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
+# vim:ft=zsh

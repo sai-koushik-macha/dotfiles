@@ -10,3 +10,5 @@ inoremap <Down> <Nop>
 inoremap <Left> <Nop>
 inoremap <Right> <Nop>
 inoremap <Backspace> <Nop>
+
+" vim:ft=vim

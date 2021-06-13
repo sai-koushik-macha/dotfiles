@@ -16,3 +16,5 @@ set statusline+=\
 set statusline+=\ %P
 set statusline+=\  
 set statusline+=\  
+
+" vim:ft=vim

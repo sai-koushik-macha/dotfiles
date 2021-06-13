@@ -6,3 +6,5 @@ endfunction
 
 
 nnoremap <leader>sp :call FixLastSpellingError()<cr>
+
+" vim:ft=vim
