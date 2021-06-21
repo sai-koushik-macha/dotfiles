@@ -26,8 +26,9 @@ alias clear="unset NEW_LINE_BEFORE_PROMPT && clear"
 alias g="git"
 
 # vim
-alias v="vim"
-alias vi="vim"
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
 
 # Use mkdir -p instead of mkdir
 alias mkdir="mkdir -p"

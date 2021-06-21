@@ -1,7 +1,13 @@
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } 
 Plug 'junegunn/fzf.vim'
-noremap <C-p> :GFiles<cr>
-noremap <leader>b :Buffers<cr>
-let g:fzf_layout = { 'left': '100%' }
+
+let g:fzf_files_options =
+  \ '--reverse ' .
+  \ '--preview "(coderay {} || cat {}) 2> /dev/null | head -'.&lines.'"'
+
+nnoremap <C-p> :GFiles<cr>
+nnoremap <leader>b :Buffers<cr>
+nnoremap <C-l> :Files<cr>
+let g:fzf_layout = { 'window' : { 'width' : 0.8, 'height' : 0.8 } }
 
 " vim:ft=vim

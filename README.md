@@ -1,7 +1,7 @@
 # Dotfiles
 
 ## Vim
-I use [vim-plug](https://github.com/junegunn/vim-plug) for my plugin manager for vim. I have my plugins and customization in vim/rcplugins and vim/rcfiles directories respectively.
+I use [vim-plug](https://github.com/junegunn/vim-plug) as my plugin manager for neovim. I have my plugins and customization in vim/rcplugins and vim/rcfiles directories respectively.
 
 ## Zsh
 I run zsh as my shell along with [fzf](https://github.com/junegunn/fzf) for fuzzy finding. Install fzf. 
