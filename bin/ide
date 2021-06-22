@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+tmux rename-window 'editor'
+tmux send-keys -t 'editor' 'nvim' C-m
+tmux new-window -t 2 -n "main"
+tmux select-window -t 'main'
+tmux split-window -v -p 30
+tmux split-window -h -p 30
+if [[ -d "node_modules" ]]; then
+	tmux send-keys -t 3 'nodemon' C-m
+fi
+tmux select-window -t 'editor'
