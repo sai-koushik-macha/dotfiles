@@ -1,27 +1,27 @@
-#!/usr/bin/env bash
+#!/bin/bash
+#
+# Open a project in tmux use fzf to choose the project
 
-# go to home directory of the user
-cd ~ || exit
 
-# find all the files in the home directory
-# find all the directories which are git repositories i.e.
-# find all directories with .git directory
-# sort them
-# send them to fzf
-directory=$(find * | grep /.git/ | sed 's/\/.git.*//' | sort | uniq | fzf)
+# A project is a git repo. So, find all git repositories in my home directory.
+directory=$(find ~ -type d -name .git \
+  | grep -v -w '.vim\|.fzf' \
+  | sed 's/\/.git//' \
+  | sort \
+  | uniq \
+  | fzf)
 
 # if no directory is chosen just exit out off the script
 [ "$directory" == "" ] && exit
 cd "$directory" || exit
 session_name=$(basename "$PWD")
 
-
 # logic for going to specified session_name
 if [[ -z "$TMUX" ]]; then
-	tmux new-session -As "$session_name"
+  tmux new-session -As "$session_name"
 else
-    if ! tmux has-session -t "=$session_name" ; then
-		(TMUX='' tmux new-session -Ad -s "$session_name")
-    fi
-    tmux switch-client -t "$session_name"
+  if ! tmux has-session -t "=$session_name" ; then
+    (TMUX='' tmux new-session -Ad -s "$session_name")
+  fi
+  tmux switch-client -t "$session_name"
 fi

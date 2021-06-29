@@ -11,9 +11,7 @@ set wildmode=full
 " Settings ctags
 set tags=tags
 " tab stops
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2 shiftwidth=2 expandtab 
 " no error bells
 set noerrorbells visualbell t_vb=
 " Numbering

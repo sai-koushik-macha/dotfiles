@@ -1,0 +1,5 @@
+Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'arzg/vim-colors-xcode'
+
+" vim:ft=vim

@@ -36,3 +36,6 @@ call s:SourceConfigFilesIn('rcplugins')
 call plug#end()
 
 call s:SourceConfigFilesIn('rcfiles')
+
+" have transparency background
+highlight Normal guibg=none

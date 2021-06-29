@@ -1,22 +1,22 @@
 [user]
-	email = saikoushikmacha@gmail.com
-	 name = sai-koushik-macha
+  email = saikoushikmacha@gmail.com
+  name = sai-koushik-macha
 [color]
-    branch = auto
-	  diff = auto
-    status = auto
+  branch = auto
+  diff = auto
+  status = auto
 [color "status"]
-	    added = green
-	  changed = magenta
-	untracked = red 
+  added = green
+  changed = magenta
+  untracked = red 
 [alias]
-     a = add
-    ci = commit -a
-    co = checkout
-	 d = diff
-	pl = pull
-	ps = push
-	 r = restore
-    st = status
+  a = add
+  ci = commit -a
+  co = checkout
+  d = diff
+  pl = pull
+  ps = push
+  r = restore
+  st = status
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore

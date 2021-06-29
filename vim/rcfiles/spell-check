@@ -1,7 +1,7 @@
 set spell
 
 function! FixLastSpellingError()
-	normal! mm[s1z=`m
+  normal! mm[s1z=`m
 endfunction
 
 

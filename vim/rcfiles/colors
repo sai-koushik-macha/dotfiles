@@ -1,4 +1,8 @@
 set background=dark
+
+" different colorschemes
 colorscheme gruvbox
+" colorscheme dracula
+" colorscheme xcodedarkhc
 
 " vim:ft=vim
