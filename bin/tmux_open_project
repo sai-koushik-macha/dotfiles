@@ -9,7 +9,7 @@ directory=$(find ~ -type d -name .git \
   | sed 's/\/.git//' \
   | sort \
   | uniq \
-  | fzf)
+  | fzf --height 40%)
 
 # if no directory is chosen just exit out off the script
 [ "$directory" == "" ] && exit

@@ -1,1 +1,1 @@
-bindkey -s '^p' 'tmux_open_project^M'
+bindkey -s '^v' 'tmux_open_project^M'

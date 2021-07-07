@@ -39,4 +39,7 @@ alias dot="rcup; source $HOME/.zprofile"
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
+# ssh agent
+alias ssha='eval $(ssh-agent) && ssh-add'
+
 # vim:ft=zsh
