@@ -5,7 +5,7 @@
 
 # A project is a git repo. So, find all git repositories in my home directory.
 directory=$(find ~ -type d -name .git \
-  | grep -v -w '.vim\|.fzf' \
+  | grep -v -w '.vim\|.fzf\|.antigen' \
   | sed 's/\/.git//' \
   | sort \
   | uniq \

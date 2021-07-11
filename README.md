@@ -4,7 +4,7 @@
 I use [vim-plug](https://github.com/junegunn/vim-plug) as my plugin manager for neovim. I have my plugins and customization in vim/rcplugins and vim/rcfiles directories respectively.
 
 ## Zsh
-I run zsh as my shell along with [fzf](https://github.com/junegunn/fzf) for fuzzy finding. Install fzf. 
+I run zsh as my shell along with [fzf](https://github.com/junegunn/fzf) for fuzzy finding. Install fzf. I use [antigen](https://github.com/zsh-users/antigen/tree/develop) as my plugin manager. Install it in home directory as a hidden file.
 
 ## tmux
 I use tmux for my terminal multiplexer
